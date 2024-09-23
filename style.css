@@ -17,6 +17,8 @@ body{
     background-color: var(--Light-grayish-blue);
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     font-family: Barlow Semi Condensed;
 }
 
@@ -25,16 +27,16 @@ p{
 }
 
 .card__area{
-    padding: 40px 20px;
     display: grid;
+    padding: 48px;
     grid-gap: 50px;
     grid-template-columns: 1fr;
 }
 
 .card{
-    max-width:355px;
+    max-width:325px;
     background-color: var(--Moderate-violet);
-    padding: 20px;
+    padding: 30px;
     position: relative;
     border-radius: 10px;
     
@@ -42,7 +44,6 @@ p{
 
 .person__area{
     display: flex;
-    display: inline-flex;
     line-height: 20px;
     padding-bottom:20px ;
     
@@ -95,6 +96,7 @@ p{
     color: var(--White);
     opacity: 70%;
     text-align: left;
+    line-height: 20px;
 }
 .card__2{
     background-color: var(--Very-dark-grayish-blue);
@@ -142,14 +144,20 @@ p{
 }
 .testimony__5 p{
     color:var(--Very-dark-grayish-blue);
+    line-height: 20px;
 }
 
-
-@media (min-width:376px) {
+@media (min-width:768px){
     .card__area{
         display: grid;
-        margin: 50px 120px;
-        padding: 0;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:auto auto ;
+    }
+}
+@media (min-width:1100px) {
+    .card__area{
+        display: grid;
         grid-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows:auto auto ;
@@ -169,4 +177,5 @@ p{
         grid-column-end:4 ;
         max-width: 710px;
     }
+
 }   
