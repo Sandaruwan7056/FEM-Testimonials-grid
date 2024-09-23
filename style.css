@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    background-color: var(--Light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    font-family: Barlow Semi Condensed;
+}
+
+p{
+    font-size: 13px;
+}
+
+.card__area{
+    padding: 40px 20px;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    max-width:355px;
+    background-color: var(--Moderate-violet);
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.person__area{
+    display: flex;
+    display: inline-flex;
+    line-height: 20px;
+    padding-bottom:20px ;
+    
+}
+
+
+.person__img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 2px solid;
+    border-color: #A775F1;
+    
+}
+
+.quotes{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 1;
+}
+
+.names{
+    padding-left: 15px;
+}
+
+.name{
+    color: var(--White);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Verified{
+    color: var(--White);
+    opacity: 50%;
+}
+
+.heading{
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    color: var(--White);
+    font-size: larger;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.testimony p{
+    font-size: 14px;
+    color: var(--White);
+    opacity: 70%;
+    font-weight: 600;
+    text-align: left;
+}
+.card__2{
+    background-color: var(--Very-dark-grayish-blue);
+    
+}
+.person__img__2{
+    border:none;
+}
+.card__3{
+    background-color: var(--White);
+}
+.person__img__3{
+    border:none;
+}
+.name__3{
+    color: var(--Very-dark-blackish-blue);
+}
+.Verified__3{
+    color: var(--Very-dark-blackish-blue);
+}
+.heading__3{
+    color: var(--Very-dark-blackish-blue);
+}
+.testimony__3 p{
+    color:var(--Very-dark-blackish-blue);
+}
+.card__4{
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.card__5{
+    background-color: var(--White);
+}
+.person__img__5{
+    border:none;
+}
+.name__5{
+    color:var(--Very-dark-grayish-blue);
+}
+.Verified__5{
+    color:var(--Very-dark-grayish-blue);
+}
+.heading__5{
+    color:var(--Very-dark-grayish-blue);
+}
+.testimony__5 p{
+    color:var(--Very-dark-grayish-blue);
+}
+
+
+@media (min-width:376px) {
+    .card__area{
+        display: grid;
+        margin: 50px 120px;
+        padding: 0;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:auto auto ;
+    }
+    .card__1{
+        grid-column-start: 1;
+        grid-column-end:3 ;
+        max-width: 710px;
+    }
+    .card__5{
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end:3;
+    }
+    .card__4{
+        grid-column-start: 2;
+        grid-column-end:4 ;
+        max-width: 710px;
+    }
+}   
